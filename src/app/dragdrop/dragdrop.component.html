@@ -1,0 +1,8 @@
+<div class="alert alert-info">  
+    <strong>Drag and Drop with Sorting</strong>  
+  </div>  
+  <div class=" container text-center">  
+    <div cdkDropList  (cdkDropListDropped)="drop($event)">  
+      <div class="card" *ngFor="let item of items" cdkDrag>{{item}}</div>  
+    </div>  
+  </div>  
